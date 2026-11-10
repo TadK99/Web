@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sciences Dessinées</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sciences Dessinées</h1>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#bd">BD</a>
+    <a href="#apprendre">Apprendre</a>
+    <a href="#impliquer">S'impliquer</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="accueil">
+  <div class="banniere">
+    <div class="image-bd">BD à la une</div>
+    <div>
+      <h2>La science expliquée en bandes dessinées</h2>
+      <p>On veut rendre la science claire, juste et amusante pour tout le monde, de 7 à 99 ans.</p>
+      <a class="bouton" href="#bd">Lire les BD</a>
+    </div>
+  </div>
+
+  <h2>Pour qui ?</h2>
+  <div class="cartes">
+    <a class="carte" href="#bd">Enfants</a>
+    <a class="carte" href="#bd">Ados</a>
+    <a class="carte" href="#bd">Adultes</a>
+    <a class="carte" href="#impliquer">Éducateurs</a>
+    <a class="carte" href="#apprendre">Chercheurs</a>
+  </div>
+
+  <h2>À découvrir</h2>
+  <ul>
+    <li>Le monde sans fin</li>
+    <li>Urgence climatique</li>
+    <li>Un printemps à Tchernobyl</li>
+  </ul>
+
+  <h2>Notre impact</h2>
+  <div class="chiffres">
+    <div><strong>10</strong><br>BD sélectionnées</div>
+    <div><strong>8</strong><br>classes visitées</div>
+    <div><strong>4</strong><br>thèmes</div>
+  </div>
+</section>
+
+<section id="bd">
+  <h2>Bibliothèque de BD</h2>
+  <p>Ici tu trouves toutes nos BD. Chaque histoire explique un sujet scientifique ou de société.</p>
+
+  <div class="filtres">
+    <select id="theme">
+      <option value="">Tous les thèmes</option>
+      <option value="climat">Climat et environnement</option>
+      <option value="energie">Énergie et nucléaire</option>
+      <option value="sante">Santé et psychologie</option>
+      <option value="societe">Société</option>
+    </select>
+    <select id="public">
+      <option value="">Tous les âges</option>
+      <option value="enfants">Enfants</option>
+      <option value="ados">Ados</option>
+      <option value="adultes">Adultes</option>
+    </select>
+    <select id="niveau">
+      <option value="">Tous les niveaux</option>
+      <option value="facile">Facile</option>
+      <option value="moyen">Moyen</option>
+      <option value="avance">Avancé</option>
+    </select>
+    <select id="langue">
+      <option value="">Toutes les langues</option>
+      <option value="fr">Français</option>
+      <option value="en">Anglais</option>
+    </select>
+    <select id="format">
+      <option value="">Tous les formats</option>
+      <option value="court">Strip court</option>
+      <option value="long">Histoire longue</option>
+    </select>
+  </div>
+
+  <div class="liste-bd">
+    <div class="bd" data-theme="energie" data-public="adultes" data-niveau="moyen" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>Le monde sans fin</h3>
+      <p><em>Jean-Marc Jancovici et Christophe Blain</em></p>
+      <p>Énergie · Adultes · Moyen · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="climat" data-public="ados" data-niveau="moyen" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>Urgence climatique</h3>
+      <p><em>Étienne Lécroart et Ivar Ekeland</em></p>
+      <p>Climat · Ados · Moyen · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="climat" data-public="adultes" data-niveau="moyen" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>Le Paradoxe de l'Abondance</h3>
+      <p><em>Hugo Clément</em></p>
+      <p>Environnement · Adultes · Moyen · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="societe" data-public="adultes" data-niveau="facile" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>La tresse</h3>
+      <p><em>D'après le roman de Laetitia Colombani</em></p>
+      <p>Société · Adultes · Facile · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="societe" data-public="adultes" data-niveau="facile" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>Revivre</h3>
+      <p>Société · Adultes · Facile · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="sante" data-public="ados" data-niveau="facile" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>Ça va aller</h3>
+      <p><em>Alice Colin</em></p>
+      <p>Santé · Ados · Facile · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="sante" data-public="enfants" data-niveau="facile" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>La Tête dans les nuages</h3>
+      <p><em>Céline Bailleux et Emmanuelle Friedmann</em></p>
+      <p>Santé · Enfants · Facile · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="energie" data-public="adultes" data-niveau="avance" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>La bombe</h3>
+      <p><em>Didier Alcante et Laurent-Frédéric Bollée</em></p>
+      <p>Nucléaire · Adultes · Avancé · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="energie" data-public="adultes" data-niveau="moyen" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>Un printemps à Tchernobyl</h3>
+      <p><em>Emmanuel Lepage</em></p>
+      <p>Nucléaire · Adultes · Moyen · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+    <div class="bd" data-theme="sante" data-public="adultes" data-niveau="moyen" data-langue="fr" data-format="long">
+      <div class="image-bd">Image</div>
+      <h3>L'addiction, s'il vous plaît !</h3>
+      <p>Santé · Adultes · Moyen · FR · Histoire longue</p>
+      <a href="#">Lire</a> · <a href="#">Télécharger</a> · <a href="#apprendre">Glossaire</a>
+    </div>
+  </div>
+  <p id="rien" class="cache">Aucune BD ne correspond à ta recherche.</p>
+</section>
+
+<section id="apprendre">
+  <h2>Apprendre</h2>
+
+  <h3>Explications par thème</h3>
+  <p><strong>Climat et environnement :</strong> l'effet de serre, le réchauffement, notre alimentation. Lié à « Urgence climatique » et « Le Paradoxe de l'Abondance ».</p>
+  <p><strong>Énergie et nucléaire :</strong> d'où vient notre énergie, comment marche le nucléaire et quels sont ses risques. Lié à « Le monde sans fin », « La bombe » et « Un printemps à Tchernobyl ».</p>
+  <p><strong>Santé et psychologie :</strong> le cerveau, les émotions, les addictions. Lié à « Ça va aller », « La Tête dans les nuages » et « L'addiction, s'il vous plaît ! ».</p>
+  <p><strong>Société :</strong> comment on vit ensemble, ici et ailleurs. Lié à « La tresse » et « Revivre ».</p>
+
+  <h3>Glossaire</h3>
+  <dl>
+    <dt>Effet de serre</dt>
+    <dd>Certains gaz dans l'air gardent la chaleur du soleil autour de la Terre, comme une couverture. Plus il y en a, plus la Terre se réchauffe.</dd>
+    <dt>Énergie fossile</dt>
+    <dd>Le pétrole, le charbon et le gaz. Ils se sont formés sous terre pendant des millions d'années et rejettent du CO₂ quand on les brûle.</dd>
+    <dt>Radioactivité</dt>
+    <dd>Certains atomes instables libèrent de l'énergie et des rayonnements invisibles, qui peuvent être dangereux à forte dose.</dd>
+    <dt>Fission nucléaire</dt>
+    <dd>Quand on casse le noyau d'un gros atome (comme l'uranium), il libère énormément d'énergie. C'est ce qui fait marcher les centrales nucléaires.</dd>
+    <dt>Addiction</dt>
+    <dd>Quand on n'arrive plus à s'arrêter de consommer quelque chose ou de faire une activité, même si ça nous fait du mal.</dd>
+  </dl>
+
+  <h3>Sources et vérification</h3>
+  <p>Chaque BD est relue par au moins un scientifique. Les sources sont listées à la fin de chaque BD.</p>
+
+  <h3>Petit quiz</h3>
+  <div class="quiz">
+    <p>Quel gaz, rejeté quand on brûle du pétrole, du charbon ou du gaz, renforce le plus l'effet de serre ?</p>
+    <button onclick="reponse(this, false)">L'oxygène</button>
+    <button onclick="reponse(this, true)">Le dioxyde de carbone (CO₂)</button>
+    <button onclick="reponse(this, false)">L'hélium</button>
+    <p id="resultat"></p>
+  </div>
+</section>
+
+<section id="impliquer">
+  <h2>S'impliquer</h2>
+
+  <h3>Proposer une idée de BD</h3>
+  <form action="mailto:ton.email@exemple.com" method="post" enctype="text/plain">
+    <input type="text" name="nom" placeholder="Ton nom">
+    <textarea name="idee" placeholder="Ton idée ou le sujet que tu aimerais voir"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <h3>Bénévolat et collaboration</h3>
+  <p>Tu es artiste, scientifique ou traducteur ? Tu veux venir présenter une BD dans une classe ? Écris-nous !</p>
+  <form action="mailto:ton.email@exemple.com" method="post" enctype="text/plain">
+    <input type="text" name="nom" placeholder="Ton nom">
+    <input type="email" name="email" placeholder="Ton email">
+    <select name="role">
+      <option>Artiste</option>
+      <option>Scientifique</option>
+      <option>Traducteur</option>
+      <option>Présenter en classe</option>
+    </select>
+    <textarea name="message" placeholder="Parle-nous un peu de toi"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <h3>Ton avis</h3>
+  <form action="mailto:ton.email@exemple.com" method="post" enctype="text/plain">
+    <label>Est-ce que c'était clair pour toi ?</label>
+    <select name="clair">
+      <option>Oui</option>
+      <option>Un peu</option>
+      <option>Non</option>
+    </select>
+    <input type="text" name="preferee" placeholder="Quelle était ta BD préférée ?">
+    <textarea name="appris" placeholder="Qu'as-tu appris ?"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email : <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></p>
+</section>
+
+<footer>
+  <p>Sciences Dessinées · 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
